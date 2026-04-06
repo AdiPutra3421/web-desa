@@ -27,39 +27,16 @@
       <nav class="navbar">
         <div class="logo">
           <a href="index.html">
-            <img src="assets/images/logo_hmj.png" alt="HMJTI" />
+            <img src="assets/images/logo.png" alt="PROFILE DESA AENGANYAR" />
           </a>
-          <span>HMJTI</span>
+          <span>PROFILE DESA AENGANYAR</span>
         </div>
 
         <!-- Desktop Menu -->
         <ul class="nav-links">
           <li><a href="index.html">Beranda</a></li>
-          <li class="dropdown">
-            <a href="#">Tentang ▾</a>
-            <ul class="dropdown-menu">
-              <li><a href="sejarah.html">Sejarah</a></li>
-              <li><a href="visi-misi.html">Visi Misi</a></li>
-            </ul>
-          </li>
-          <li class="dropdown">
-            <a href="#">Departemen ▾</a>
-            <ul class="dropdown-menu">
-              <li><a href="struktur.html">Struktur</a></li>
-              <li><a href="departemen.html">Departemen</a></li>
-            </ul>
-          </li>
-          <li class="dropdown">
-            <a href="#">Informasi ▾</a>
-            <ul class="dropdown-menu">
-              <li><a href="berita.html">Berita</a></li>
-              <li><a href="beasiswa.html">Beasiswa</a></li>
-              <li><a href="lomba.html">Lomba</a></li>
-            </ul>
-          </li>
-          <li><a href="galeri.html">Galeri</a></li>
-          <li><a href="aspirasi.html">Aspirasi</a></li>
-          <li><a href="kontak.html">Kontak</a></li>
+          <li><a href="tentang.html">Tentang Desa</a></li>
+          <li><a href="visi-misi.html">Visi Misi</a></li>
         </ul>
 
         <!-- Hamburger for Mobile -->
@@ -74,58 +51,21 @@
       <div class="mobile-sidebar" id="mobile-sidebar">
         <div class="sidebar-header">
           <div class="sidebar-logo">
-            <img src="assets/images/logo_hmj.png" alt="HMJTI" />
-            <span>HMJTI</span>
+            <img src="assets/images/logo.png" alt="PROFILE DESA AENGANYAR" />
+            <span>PROFILE DESA AENGANYAR</span>
           </div>
           <button class="close-btn" id="close-sidebar">×</button>
         </div>
         <div class="sidebar-content">
           <ul class="sidebar-nav">
             <li>
-              <a href="index.html"><i class="fas fa-home"></i> Beranda</a>
-            </li>
-
-            <li class="mobile-dropdown">
-              <a href="#" class="dropdown-toggle"
-                ><i class="fas fa-book"></i> Tentang</a
-              >
-              <ul class="dropdown-menu mobile-dropdown-menu">
-                <li><a href="sejarah.html">Sejarah</a></li>
-                <li><a href="visi-misi.html">Visi Misi</a></li>
-              </ul>
-            </li>
-
-            <li class="mobile-dropdown">
-              <a href="#" class="dropdown-toggle"
-                ><i class="fas fa-users"></i> Departemen</a
-              >
-              <ul class="dropdown-menu mobile-dropdown-menu">
-                <li><a href="struktur.html">Struktur</a></li>
-                <li><a href="departemen.html">Departemen</a></li>
-              </ul>
-            </li>
-
-            <li class="mobile-dropdown">
-              <a href="#" class="dropdown-toggle"
-                ><i class="fas fa-bullhorn"></i> Informasi</a
-              >
-              <ul class="dropdown-menu mobile-dropdown-menu">
-                <li><a href="berita.html">Berita</a></li>
-                <li><a href="beasiswa.html">Beasiswa</a></li>
-                <li><a href="lomba.html">Lomba</a></li>
-              </ul>
-            </li>
-
-            <li>
-              <a href="galeri.html"><i class="fas fa-images"></i> Galeri</a>
+              <a href="index.html">Beranda</a>
             </li>
             <li>
-              <a href="aspirasi.html"
-                ><i class="fas fa-comment"></i> Aspirasi</a
-              >
+                <a href="tentang.html">Tentang Desa</a>
             </li>
             <li>
-              <a href="kontak.html"><i class="fas fa-envelope"></i> Kontak</a>
+                <a href="visi-misi.html">Visi Misi</a>
             </li>
           </ul>
         </div>
@@ -195,7 +135,6 @@
     <footer class="footer">
       <div class="footer-container">
         <div class="footer-grid">
-          <!-- Kolom About HMJTI -->
           <div class="footer-col about-hmjti">
             <div class="footer-logo">
               <img
@@ -212,7 +151,6 @@
             </p>
           </div>
 
-          <!-- Kolom Kontak -->
           <div class="footer-col contact-info">
             <h2>KONTAK</h2>
             <p>
@@ -225,7 +163,6 @@
             </p>
           </div>
 
-          <!-- Kolom Sosial Media -->
           <div class="footer-col social-media">
             <h2>SOSIAL MEDIA</h2>
             <ul>
@@ -249,9 +186,17 @@
       <i class="fas fa-arrow-up"></i>
     </a>
 
+    <!-- Copyright -->
     <div class="copyright">
-      <p>Copyright © 2025 Design & Developed</p>
+      <p>Copyright © 2025 Design & Developed by HMJTI</p>
     </div>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="assets/aos-master/dist/aos.js"></script>
+    <script src="assets/js/script.js"></script>
+
     <!-- LOADING SCRIPT -->
     <script>
       // loading
@@ -277,8 +222,41 @@
         setTimeout(hideLoading, 3500);
       })();
     </script>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="assets/js/visi-misi.js"></script>
-    <script src="assets/js/script.js"></script>
+
+    <script>
+      // Init AOS
+      AOS.init({
+        duration: 1500,
+        once: true,
+      });
+
+      // Init Slick Carousel
+      $(document).ready(function () {
+        $(".info-slider").slick({
+          dots: true,
+          arrows: true,
+          infinite: true,
+          speed: 1500,
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 2500,
+          responsive: [
+            {
+              breakpoint: 992,
+              settings: {
+                slidesToShow: 2,
+              },
+            },
+            {
+              breakpoint: 576,
+              settings: {
+                slidesToShow: 1,
+              },
+            },
+          ],
+        });
+      });
+    </script>
   </body>
 </html>
